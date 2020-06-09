@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Labels">
+        <menu>
+            <item
+                android:id="@+id/mFav"
+                android:icon="@drawable/ic_favorite"
+                android:title="Favorite" />
+            <item
+                android:id="@+id/mShare"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Compartilhar" />
+
+        </menu>
+    </item>
+    <group
+        android:id="@+id/grpMenu"
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:orderInCategory="@android:integer/config_shortAnimTime"
+        android:menuCategory="system"
+        android:visible="true">
+        <item
+            android:icon="@drawable/ic_mail"
+            android:title="Inbox" >
+            <menu>
+                <item
+            </menu>
+        </item>
+        <item
+            android:icon="@drawable/ic_send"
+            android:title="Outbox" />
+        <item
+            android:icon="@drawable/ic_block"
+            android:title="Spam" />
+        <item
+            android:icon="@drawable/ic_delete_black"
+            android:title="Trash" />
+    </group>
+
+
+</menu>
